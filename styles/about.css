@@ -1,0 +1,27 @@
+.aboutPage {
+    position: relative;
+    width: 75%
+}
+
+.identify {
+    padding-top: 25px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.explainProject {
+    font-weight: bold;
+    display:inline;
+    text-align: center;
+    font-size: x-large;
+}
+
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    width: 150px;
+    text-align: center;
+}

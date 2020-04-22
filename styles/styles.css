@@ -1,0 +1,135 @@
+/*Body style, keep display on all over the screen */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Style for top app contain only title and logo */
+.logo-and-title {
+    position: fixed;
+    border-style: outset;
+    width: 100%;
+    background-color: rgb(211, 193, 30);
+    z-index: 1;
+}
+
+.logo-and-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+}
+
+@font-face {
+    font-family: playfairDisplay;
+    src: url(./external-font/static/PlayfairDisplay-Bold.ttf);
+}
+.header-title {
+    font-family: playfairDisplay;
+    margin-top: 1%;
+}
+
+.logo-img {
+    width: 100px;
+    padding: 5px;
+}
+
+
+/*Center and keep flex the switch divs*/
+main {
+    margin: auto;
+    width: 70%;
+    border: 3px solid green;
+    padding: 10px;
+    position: fixed;
+    top: 20%;
+    right: 15%;
+    left: 15%;
+    background-color: rgba(128, 128, 128, 0.767);
+    z-index: 1;
+}
+
+/*menu coin */
+.menu-coins {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+}
+
+.menu > a {
+    color: green;
+    font-size: large;
+    padding-right: 15px ;
+    padding-left: 5px ;
+}
+
+
+.menu > a:hover {
+    color: rgb(19, 87, 19);
+    text-decoration: none;
+}
+
+/*Keep search area in same line with menu */
+h5 {
+    display: inline;
+}
+
+/*Center and keep flex the area coins*/
+.areaCoins {
+    height: calc(60vh);
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    flex-wrap: wrap;
+}
+
+/*Center and keep flex each coin*/
+.boxCoin {
+    width: 300px;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.644);
+    border-radius: 10px;
+    padding: 20px;   
+}
+
+/*style for id of any coin*/
+.showIdCoin {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*style for name of any coin*/
+.showNameCoin {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*style for button "more info" of any coin*/
+/* Style the button that is used to open and close the collapsible content */
+button[class^="showMoreInfo"]{
+    background-color: green;
+}
+
+.infoBox {
+    border: 1px solid gray;
+}
+
+#moreInfoBox {
+    display: none;
+}
+
+/* message error value into input - error 404*/
+.errorMessage {
+    font-weight: bold;
+}
+
+/*Progress bar */
+#loadingmessage {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+
+
+
+

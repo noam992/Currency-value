@@ -1,0 +1,39 @@
+/*style of first background scrolling */
+.backgound {
+  z-index: 0;
+}
+
+.parallax-group-1 {
+  height: 100vh;
+  width: 100%;
+  background-image: url(/assets/Img/coin-1.png);
+  background-size: cover;
+  background-position: center;
+  display: table;
+  background-attachment: fixed;
+  transform: translateZ(90px) scale(.5);
+}
+
+/*style of second background scrolling */
+.parallax-group-2 {
+  height: 100vh;
+  width: 100%;
+  background-image: url(/assets/Img/coin-2.png);
+  background-size: cover;
+  background-position: left;
+  display: table;
+  background-attachment: fixed;
+  transform: translateZ(90px) scale(.5);
+}
+
+/*style of third background scrolling */
+.parallax-group-3 {
+  height: 100vh;
+  width: 100%;
+  background-image: url(/assets/Img/coin-3.png);
+  background-size: cover;
+  background-position: left;
+  display: table;
+  background-attachment: fixed;
+  transform: translateZ(90px) scale(.5);
+}

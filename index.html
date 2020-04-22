@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/switch-btn.css">
+    <link rel="stylesheet" href="/styles/backgroun.css">
+    <link rel="stylesheet" href="/styles/about.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/modal.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="jquery-3.4.1.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="home.js"></script>
+    <script src="about.js"></script>
+    <script src="report.js"></script>
+    <script src="getCoins.js"></script>
+    <script src="infoCoin.js"></script>
+    <script src="selectedCoin.js"></script>
+    <script src="modal.js"></script>
+</head>
+<body>
+
+    <header>
+      <div class="logo-and-title">
+        <h1 class="header-title">cryptonite</h1>
+        <img class="logo-img" src="./assets/Img/logo/kryptonite-coin.png" alt="Kryptonite-coin">
+      </div>
+    </header>
+
+    <!--Background-->
+    <section>
+      <div class="background">
+        <!--First background-->
+        <div class="parallax">
+          <div class="parallax-layer-1">
+            <div class="parallax-group-1"></div>
+          </div>
+        </div>
+
+        <!--Second background-->
+        <div class="parallax">
+          <div class="parallax-layer-2">
+            <div class="parallax-group-2"></div>
+          </div>
+        </div>
+
+        <!--Third background-->
+        <div class="parallax">
+          <div class="parallax-layer-3">
+            <div class="parallax-group-3"></div>
+          </div>
+        </div>
+      </div>
+
+      <!--Modal for situation of more than 5 chosen currency-->
+      <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+
+            <!--header modal-->
+            <div class="modal-header">
+              <h5 class="modal-title"></h5>
+            </div>
+
+            <!--Body modal-->
+            <table class="modal-body">
+              <thead>
+                <tr>
+                  <th>number</th>
+                  <th>name</th>
+                  <th>check</th>
+                </tr>
+              </thead>
+              <tbody class="contentModal">
+              </tbody>
+            </table>
+
+            <!--Note box modal-->
+            <div class="noteBox">
+              <p class="note"></p>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!--Display switch divs, contain: coins app, report and about app-->
+    <main>
+      <div class="menu-coins">
+        <!--Switch div-->
+        <div class="menu">
+          <a id="homePage" href="javascript:0">Home</a>
+          <span> | </span>
+          <a id="reportPage" href="javascript:0">Report</a>
+          <span> | </span>
+          <a id="aboutPage" href="javascript:0">About</a>
+        </div>
+        <!--progress bar-->
+        <div id='loadingmessage' style='display:none'>
+          <img src='assets\Img\gif\ajax-loader .gif'/>
+        </div>
+        <!--Sreach area-->
+        <div class="search-area">
+          <input id="inputBox" type="text" placeholder="search...">
+          <button type="button" class="searchBtn">Search</button>
+        </div>
+      </div>
+      <hr>
+
+      <!--The result of coins container. using search or get all of them-->
+      <div class="coins-layer">
+        <div class="areaCoins"  id="getDetailOfCoin"></div>
+      </div>
+
+    </main>
+
+</body>
+</html>
